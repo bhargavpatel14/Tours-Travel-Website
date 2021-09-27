@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelly Holidays</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jquery libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/contact.js"></script>
+    <script src="js/submit.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravelly</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li>
+                    <a href="packages.html">Packages</a>
+                    <ul>
+                        <li><a href="packages.html#domestic">Domestic</a></li>
+                        <li><a href="packages.html#international">International</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+                <span class="heading-space"> </span>
+                <span>u</span>
+                <span>s</span>
+            </h1>
+            <div class="row">
+                <section>
+                <div class="row-contact">
+                    <div class="column-left-width">
+                        <img id="contact-image" src="images/contact.jpg" alt="contact-img">
+                    </div>
+                    <div class="column" id="contact-form">
+                        <form id="contact" method="get">
+                            <label for="fname"> First Name</label><br><br>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.."><span>*</span><br>
+                            <label for="lname">Last Name</label><br><br>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><span>*</span><br>
+                            <label for="email">Email Address</label><br><br>
+                            <input type="text" id="email" name="email" placeholder="Your email address.."><span>*</span><br>
+                            <label for="phone">Contact Number</label><br><br>
+                            <input type="text" id="phone" name="phone" placeholder="Your Contact Number.."><span>*</span><br>
+                            <label for="destination">Destination</label><br><br>
+                            <select id="destination" name="destination">
+                                <option value="Saputara">Saputara</option>
+                                <option value="Mumbai" selected>Mumbai</option>
+                                <option value="Jaisalmer">Jaisalmer</option>
+                                <option value="Ladakh">Ladakh</option>
+                                <option value="Manali">Manali</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Paris">Paris</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Dubai">Dubai</option>
+                            </select><br><br>
+                            <label for="subject">Ask your queries</label><br><br>
+                            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                            <div class="row-container">
+                                <label class="padding">Rate </label>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label>
+                                </div>
+                            </div>
+                            <input type="button" class="btn" value="Submit" id="submit">
+                        </form>
+                    </div>
+                </div>
+
+                <h1 class="heading">
+                    <span>r</span>
+                    <span>e</span>
+                    <span>v</span>
+                    <span>i</span>
+                    <span>e</span>
+                    <span>w</span>
+                <h1> 
+               
+                <button class="review btn" id="review"><span>+ </span> Add Review</button>
+                <div class="display" id="add-experience">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name">
+                    <label for="gender">Gender :</label>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female" selected>Female</option>
+                    </select>
+                    <label for="destination">Destination</label>
+                    <select id="travel_destination" name="travel_destination">
+                        <option value="Saputara">Saputara</option>
+                        <option value="Mumbai" selected>Mumbai</option>
+                        <option value="Jaisalmer">Jaisalmer</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Sydney">Sydney</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Dubai">Dubai</option>
+                    </select>
+                    <label for="add-review">Write a review : </label>
+                    <textarea id="add-review"></textarea>
+                    <button class="btn" id="add">Add</button>
+                </div>
+                
+                <div class="Hello">
+                    
+                </div>
+                <div class="customer-experience flexbox-container">
+                    <div class="flexbox-item">
+                        <h2>Name : Prachi Patel</h2>
+                        <h3>Travelled to : Jaisalmer</h3><br>
+                        <p>"One of my friend suggested to book "Travelly" tours for vacation. And I must say this was my best decision ever. I have travelled so many places with different tours and travels agencies but "Travelly" was the best till now. Their services are excatly same as their websites. you can fully trust them.
+                        Can't wait to travel with them again."</p>
+                        
+                    </div>
+                    <img src="images/female.png" alt="female-icon">
+                </div>
+                <div class="customer-experience flexbox-container">
+                    <img src="images/male.jpg" alt="male-icon">
+                    <div class="flexbox-item">
+                        <h2>Name : Dhruv patel</h2>
+                        <h3>Travelled to : Dubai</h3><br>
+                        <p>"I have been regular customer of "Travelly" since 2 years now. I never face any difficulties in any of their international or domestic trips. They genuinely help in each and every step. Travelly is the best travel agency in order to food and their hotel bookings. I will highly recommend you to book your previous time of holidays with "Travelly" you will not regret your decision."
+                        </p>
+                    </div>
+                </div>
+                <div class="customer-experience flexbox-container">
+                    <div class="flexbox-item">
+                        <h2>Name : Shreya Parmar</h2>
+                        <h3>Travelled to: Malaysia</h3><br>
+                        <p>"Recently in covid time I travelled with "Travelly" and i was amazed to see the safety measures provided by them. This was the best experience for me with any travel agencies till now. I will suggest you to book your trip with them as they are highly professional in every section."</p> 
+                    </div>
+                    <img src="images/female.png" alt="female-icon">
+                </div>
+            </section>
+
+            </div>
+            <div>
+                <h1 class="heading">
+                    <span>o</span>
+                    <span>u</span>
+                    <span>r</span>
+                    <span class="heading-space"> </span>
+                    <span>b</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>c</span>
+                    <span>h</span>
+                    <span>e</span>
+                    <span>s</span>
+                </h1>
+            </div>
+            <div class="text-container flexbox-container"> 
+
+                <div class="left-container flexbox-item">
+                    <br>
+                    <h2><i class="fas fa-map-marker-alt"></i> Ahmedabad</h2>
+                    <p><strong><i class="fas fa-laptop-house"></i> Address :</strong> 103, JBR Arcade, Science City Road, Sola, Ahmedabad-380060, Gujarat, India<br>
+                        <strong><i class="fas fa-phone-alt"></i> Phone Number :</strong> +91 1234567890<br>
+                        <strong><i class="fas fa-envelope"></i> Email :</strong> info_ahmedabad@travelly.com
+                    </p>
+                    <br> 
+                    
+                </div>
+                <div class="right-container flexbox-item">
+                    <br>
+                    <h2><i class="fas fa-map-marker-alt"></i> Mumbai</h2>
+                    <p><strong><i class="fas fa-laptop-house"></i> Address :</strong> B-105, Twin Arcade, Off Military Road, Andheri East, Mumbai-400059, Maharashtra, India<br>
+                        <strong><i class="fas fa-phone-alt"></i> Phone Number :</strong> +91 9876543210<br>
+                        <strong><i class="fas fa-envelope"></i> Email :</strong> info_mumbai@travelly.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                    
+                <h4>Ahmedabad</h4>
+                <p>Address : 103, JBR Arcade, Science City Road, Sola, Ahmedabad-380060, Gujarat, India<br>
+                    Phone Number : +91 1234567890<br>
+                    Email : info_ahmedabad@travelly.com
+                </p>
+                <br> 
+                <h4>Mumbai</h4>
+                <p>Address :B-105, Twin Arcade, Off Military Road, Andheri East, Mumbai-400059, Maharashtra, India<br>
+                    Phone Number : +91 9876543210<br>
+                    Email : info_mumbai@travelly.com</p></p>
+            </div>        
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="contact.html">Ahmedabad</a>
+                <a href="contact.html">Mumbai</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">Home</a>
+                <a href="Book.html">Book</a>
+                <a href="Packages.html">packages</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="social-media">
+                    <a href="#"><span><img src="images/facebook.png"></span></a>
+                    <a href="#"><span><img src="images/instagram.png"></span></a>
+                    <a href="#"><span><img src="images/twitter.png"></span></a>
+                    <a href="#"><span><img src="images/linkedin.png"></span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> Copyright <span> &copy; 2021 </span> | all rights reserved! </h1>
+
+    </footer>
+</body>
+</html>

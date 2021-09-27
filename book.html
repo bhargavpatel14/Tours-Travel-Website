@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelly Holidays</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jquery libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/book.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravelly</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li>
+                    <a href="packages.html">Packages</a>
+                    <ul>
+                        <li><a href="packages.html#domestic">Domestic</a></li>
+                        <li><a href="packages.html#international">International</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>b</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+                <span class="heading-space"> </span>
+                <span>n</span>
+                <span>o</span>
+                <span>w</span>
+            </h1>
+            <h2>Plan your enjoyable trip</h2>
+            <div class="row">
+                <div class="image">
+                    <img src="images/travelling2.jpg" alt="">
+                </div>
+
+                <form id="book-form" method="POST">
+                    <div class="inputBox">
+                        <h3>Your Name</h3>
+                        <input type="text" placeholder="Your Name" id="name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>how many Travellers</h3>
+                        <input type="number" placeholder="Number of travellers" id="travellers" min="1" max="10">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Leaving date</h3>
+                        <input type="text" id="datepicker" placeholder="Select Date" readonly="readonly">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Destination</h3>
+                        <select id="destination" name="destination">
+                            <option value="Saputara" selected>Saputara</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Jaisalmer">Jaisalmer</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Manali">Manali</option>
+                            <option value="Sydney">Sydney</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Dubai">Dubai</option>
+                        </select>
+                    </div>
+                    <input type="button" class="btn" value="book now" id="book-now">
+                </form>
+            </div>
+            <div id="details" class="details"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h3>About us</h3> 
+                <h4>Ahmedabad</h4>
+                <p>Address : 103, JBR Arcade, Science City Road, Sola, Ahmedabad-380060, Gujarat, India<br>
+                    Phone Number : +91 1234567890<br>
+                    Email : info_ahmedabad@travelly.com
+                </p>
+                <br> 
+                <h4>Mumbai</h4>
+                <p>Address :B-105, Twin Arcade, Off Military Road, Andheri East, Mumbai-400059, Maharashtra, India<br>
+                    Phone Number : +91 9876543210<br>
+                    Email : info_mumbai@travelly.com</p></p>
+            </div>        
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="contact.html">Ahmedabad</a>
+                <a href="contact.html">Mumbai</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">Home</a>
+                <a href="Book.html">Book</a>
+                <a href="Packages.html">packages</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="social-media">
+                    <a href="#"><span><img src="images/facebook.png"></span></a>
+                    <a href="#"><span><img src="images/instagram.png"></span></a>
+                    <a href="#"><span><img src="images/twitter.png"></span></a>
+                    <a href="#"><span><img src="images/linkedin.png"></span></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit"> Copyright <span> &copy; 2021 </span> | all rights reserved! </h1>
+    </footer>
+</body>
+</html>
